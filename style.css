@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Almarai', sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    /* border: solid red; */
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffffe;
+}
+
+.brgr_menu{
+    width: 35px;
+}
+
+header{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    font-size: 2em;
+    /* border: solid blue; */
+    background-image: url(villa_agreable.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#intro_box{
+    color: #fffffe;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
