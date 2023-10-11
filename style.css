@@ -7,18 +7,21 @@
 body{
     font-family: 'Almarai', sans-serif;
     background-color: black;
+    color: #fffffe;
     width: 100%;
     height: 100%;
 }
 
 nav{
-    /* border: solid red; */
+    width: 100%;
     padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #fffffe;
+    color: black;
+    z-index: -1;
 }
 
 .brgr_menu{
@@ -32,10 +35,30 @@ header{
     justify-content: center;
     text-align: end;
     font-size: 2em;
-    /* border: solid blue; */
     background-image: url(villa_agreable.jpg);
     background-size: cover;
     background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.header_nav_layer{
+    height: 900px;
+    background: #000000;
+    background: #000000;
+    background: #000000;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
+    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
+}
+
+header h1{
+    padding-right: 15px;
+}
+
+header p{
+    padding: 15px;
 }
 
 #intro_box{
@@ -48,5 +71,33 @@ header{
     justify-content: center;
 }
 
+main{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
 
+main h1{
+    margin: 10px;
+}
+
+.first-house{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: end;
+    gap: 20px;
+}
+
+.second-house{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row-reverse;
+   text-align: start; 
+}
 
