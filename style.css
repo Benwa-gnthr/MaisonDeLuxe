@@ -13,15 +13,31 @@ body{
 }
 
 nav{
+    height: 100px;
     width: 100%;
     padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #fffffe;
-    color: black;
-    z-index: -1;
+    background-color: ;
+    color: #fffffe;
+    position: fixed;
+    z-index: 0;
+    background: #000000;
+}
+
+nav li{
+    list-style: none;
+}
+
+ul{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .brgr_menu{
@@ -45,12 +61,9 @@ header{
 .header_nav_layer{
     height: 900px;
     background: #000000;
-    background: #000000;
-    background: #000000;
-    background: #000000;
-    background: linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
-    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
-    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 70%);
+    background: linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 50%, #000000 90%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 50%, #000000 90%);
+    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255,255,255,0) 50%, #000000 90%);
 }
 
 header h1{
