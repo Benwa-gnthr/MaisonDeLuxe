@@ -101,12 +101,26 @@ main h1{
 }
 
 .first-house{
+    border: solid blue;
+    background-size: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     text-align: end;
     gap: 20px;
+}
+
+.house-text{
+    z-index: 3;
+}
+
+.first-house-layer{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 456px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .second-house{
