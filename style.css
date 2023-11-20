@@ -8,8 +8,7 @@ body{
     font-family: 'Almarai', sans-serif;
     background-color: black;
     color: #fffffe;
-    width: 100%;
-    height: 100%;
+
 }
 
 nav{
@@ -22,11 +21,7 @@ nav{
     align-items: self-start;
     color: #fffffe;
     position: fixed;
-    z-index: 0;
-    background: rgba(0,0,0,0);
-    background: linear-gradient(90deg,rgba(0,0,0,0) 0%, #000000 80%);
-    background: -webkit-linear-gradient(90deg,rgba(0,0,0,0) 0%, #000000 80%);
-    background: -moz-linear-gradient(90deg,rgba(0,0,0,0) 0%, #000000 80%);
+    z-index: 10;
 }
 
 nav li{
@@ -47,7 +42,7 @@ ul{
 }
 
 header{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,16 +56,11 @@ header{
 }
 
 .header_layer{
-    /* border: solid red; */
-    height: 900px;
-    background: #000000;
-    background: linear-gradient(90deg,#000000 0%, rgba(255,255,0,0) 40%, rgba(255,255,0,0) 50%, #000000 80%);
-    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255,255,0,0) 40%, rgba(255,255,0,0) 50%, #000000 80%);
-    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255,255,0,0) 40%, rgba(255,255,0,0) 50%, #000000 80%);
+    height: 800px;
 }
 
 header h1{
-    padding-right: 15px;
+    padding-right: 15px;  
 }
 
 header p{
@@ -81,19 +71,24 @@ header p{
     color: #fffffe;
     position: relative;
     background: rgba(0, 0, 0, 0.5);
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 main{
-    background-color: black;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 91%, rgba(0,255,0,0) 100%);
+    background: -webkit-linear-gradient(90deg,#000000 91%, rgba(0,255,0,0) 100%);
+    background: -moz-linear-gradient(90deg,#000000 91%, rgba(0,255,0,0) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    letter-spacing: 2px;
+    padding: 50px;
 }
 
 main h1{
@@ -101,7 +96,6 @@ main h1{
 }
 
 .first-house{
-    border: solid blue;
     background-size: unset;
     display: flex;
     justify-content: center;
@@ -118,7 +112,7 @@ main h1{
 .first-house-layer{
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     height: 456px;
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -128,6 +122,7 @@ main h1{
    justify-content: center;
    align-items: center;
    flex-direction: row-reverse;
-   text-align: start; 
+   text-align: start;
+   gap: 20px;
 }
 
